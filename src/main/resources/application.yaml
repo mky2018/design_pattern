@@ -1,0 +1,4 @@
+server:
+  port: 21231
+  tomcat:
+    max-threads: 100

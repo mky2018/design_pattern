@@ -1,2 +1,2 @@
 # design_pattern
-Design pattern and test.
+内含一些设计模式的案例，以及java8的一些特性和一些常用的包(比如google的guava等)，持续更新ing...
