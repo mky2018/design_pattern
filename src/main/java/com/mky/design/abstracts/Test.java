@@ -12,6 +12,7 @@ public class Test {
 
         // C extends B / B extends A 静态代码块执行顺序: A -> B -> C
         // C extends B / B extends A 无参构造执行顺序: A -> B -> C
+        // 类不可多继承
         C c = new C();
         c.testA();
     }
