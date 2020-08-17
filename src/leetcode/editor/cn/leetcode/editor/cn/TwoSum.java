@@ -29,20 +29,23 @@ public class TwoSum {
     class Solution {
         public int[] twoSum(int[] nums, int target) {
 
+            // 定义返回值
             int[] indexes = new int[2];
 
+            // 定义承载map
             Map<Integer, Integer> map = new HashMap<Integer, Integer>(nums.length);
 
             for (int i = 0; i < nums.length; i++) {
 
+                // map 中包含 c    c + b = target
                 if (map.containsKey(nums[i])) {
                     indexes[0] = i;
                     indexes[1] = map.get(nums[i]);
                     return indexes;
                 }
 
+                // target - b = c
                 map.put(target - nums[i], i);
-
             }
 
             return indexes;
